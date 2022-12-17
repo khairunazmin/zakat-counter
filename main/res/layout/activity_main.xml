@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goldslanted"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/ETgram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Gram (g)"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        />
+
+    <EditText
+        android:id="@+id/ETvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:hint="Current Value (RM/g)"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+    <RadioButton
+        android:id="@+id/radioWear"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        android:text="Wear (200g)"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+       />
+
+    <RadioButton
+        android:id="@+id/radioKeep"
+        android:layout_width="128dp"
+        android:layout_height="45dp"
+        android:text="Keep (85g)"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+      />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:background="@drawable/round_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:onClick="onclickbuttonMethod"
+        tools:ignore="OnClick"
+         />
+
+    <Button
+        android:id="@+id/buttonClr"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:onClick="btnOnClick2"
+        android:text="Clear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:textColor="@color/white"
+        android:background="@drawable/round_btn2"
+
+         />
+
+    <TextView
+        android:id="@+id/totValGold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#fff"
+        android:textColor="#5416A3"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/totPayable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#fff"
+        android:textColor="#5416A3"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:textStyle="bold"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/finalZakat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#fff"
+        android:textColor="#5416A3"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:textStyle="bold"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>
